@@ -12,6 +12,12 @@ repositories {
 dependencies {
     testImplementation platform('org.junit:junit-bom:5.10.0')
     testImplementation 'org.junit.jupiter:junit-jupiter'
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.28.1'
+    //https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-server
+    implementation 'org.seleniumhq.selenium:selenium-server:3.14.0'
+    //https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-firefox-driver
+    implementation 'org.seleniumhq.selenium:selenium-firefox-driver:4.28.0'
+
 }
 
 test {

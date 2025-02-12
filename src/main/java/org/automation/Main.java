@@ -1,9 +1,9 @@
 package org.automation;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
-
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -13,12 +13,14 @@ public class Main {
         // to see how IntelliJ IDEA suggests fixing it.
         System.out.printf("Hello and welcome!");
 
-            System.setProperty("webdriver.gecko.driver", "C:\\drivers\\geckodriver.exe");
-            WebDriver driver = new FirefoxDriver();
-            driver.get("https://www.google.com");
-            WebElement element = driver.findElement(By.name("q"));
-            element.sendKeys("Tajmahal");
+//            System.setProperty("webdriver.gecko.driver", "C:\\drivers\\geckodriver.exe");
+        System.setProperty("webdriver.gecko.driver", "/Users/baba/Documents/GitHub/2025-Selenium/seleniumtraining/src/main/resources/drivers/geckodriver");
+        WebDriver driver = new FirefoxDriver();
+        driver.get("https://www.google.com");
+        WebElement element = driver.findElement(By.name("q"));
+        element.sendKeys("Tajmahal");
+
 //        element.submit();
-//        driver.quit();
-        }
+        driver.quit();
     }
+}

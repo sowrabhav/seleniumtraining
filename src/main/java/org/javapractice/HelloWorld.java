@@ -23,14 +23,16 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class HelloWorld {
     public static void main(String[] args) {
+        // Using args to pass arguments to the program
         switch (args[0]){
             case "Chrome":
                 System.out.println("Our program started with Chrome");
                 break;
             case "Firefox":
                 System.out.println("Our program started with Firefox");
-                System.setProperty("webdriver.gecko.driver", "/Users/baba/Documents/GitHub/2025-Selenium/seleniumtraining/src/main/resources/drivers/geckodriver");
+                /*System.setProperty("webdriver.gecko.driver", "/Users/baba/Documents/GitHub/2025-Selenium/seleniumtraining/src/main/resources/drivers/geckodriver");
                 WebDriver driver = new FirefoxDriver();
+                driver.quit();*/
                 break;
             case "Safari":
                 System.out.println("Our program started with Safari");
@@ -40,10 +42,16 @@ public class HelloWorld {
         }
 
         System.out.println("Hello World!");
-        System.out.println(testing());
+        System.out.println(audiCar());
     }
 
-    public static boolean testing(){
+    // Creating object from a class is called instantiation
+    // Object is an instance of a class
+    // Object is a real world entity
+    // Object is a runtime entity
+    // Object is a reference to a memory location where the data and methods of a class are stored
+    public static Vehicle audiCar(){
+        // Creating an object of the Vehicle class
         Vehicle car = new Vehicle();
         car.name = "Audi";
         car.color = "Black";
@@ -53,22 +61,25 @@ public class HelloWorld {
         car.price = 50000;
 
         System.out.println("Car details: " + car);
-        return false;
+        return car;
     }
 }
 
 /**
-// packages in small characters
-// classes in camel casing starting with upper case
-// methods in camel casing starting with lower case
-// variables in camel casing starting with lower case
-// constants in all capital letters with underscores
+ packages in small characters
+ classes in camel casing starting with upper case
+ methods in camel casing starting with lower case
+ variables in camel casing starting with lower case
+ constants in all capital letters with underscores
 */
 
 /*
 Things -->
 LivingThings -->
+NonMovingLivingThings -->
+Plants -->  TomatoPlant
 Trees --> CoconutTree
+MovableLivingThings -->
 Animals -->
 Insects --> Butterfly
 Fish --> Shark

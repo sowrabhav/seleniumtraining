@@ -1,4 +1,4 @@
-package org.javapractice;
+package org.codetemplates;
 
 
 // Every Java file should have a class with the same name as the file
@@ -17,9 +17,6 @@ package org.javapractice;
 // Every Java program should have at least one class
 // Every Java program should have at least one main method
 
-
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class HelloWorld {
     public static void main(String[] args) {

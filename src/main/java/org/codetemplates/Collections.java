@@ -1,4 +1,4 @@
-package org.javapractice;
+package org.codetemplates;
 
 public class Collections {
     public static void main(String[] args) {

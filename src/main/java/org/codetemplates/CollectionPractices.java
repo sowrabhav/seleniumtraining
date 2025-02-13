@@ -1,4 +1,4 @@
-package org.javapractice;
+package org.codetemplates;
 
 public class CollectionPractices {
     // Collection is a framework that provides an architecture to store and manipulate a group of objects

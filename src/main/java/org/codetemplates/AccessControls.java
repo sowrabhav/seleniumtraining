@@ -1,4 +1,4 @@
-package org.javapractice;
+package org.codetemplates;
 
 public class AccessControls {
     // Access control is a mechanism to restrict access to certain parts of the code

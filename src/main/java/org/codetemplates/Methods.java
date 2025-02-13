@@ -1,4 +1,4 @@
-package org.javapractice;
+package org.codetemplates;
 
 public class Methods {
     // Method is a block of code that performs a specific task

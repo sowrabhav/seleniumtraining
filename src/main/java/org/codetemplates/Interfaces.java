@@ -1,4 +1,4 @@
-package org.javapractice;
+package org.codetemplates;
 
 public interface Interfaces {
 }

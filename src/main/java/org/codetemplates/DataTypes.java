@@ -1,4 +1,4 @@
-package org.javapractice;
+package org.codetemplates;
 
 public class DataTypes {
     // Data type is a classification of data

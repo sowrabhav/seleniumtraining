@@ -20,6 +20,19 @@ public class DataTypes {
     // int data type example
     int age = 30;
 
+    public static void main(String[] args) {
+        Integer age2 = 30;
+        age2.toString();
+
+        Byte b = 100;
+        b.toString();
+
+
+        int age = 30;
+        String.valueOf(30);
+    }
+
+
     // float data type
     // float data type is used to store floating-point values
     // float data type is used to store numbers with decimal points
@@ -27,7 +40,7 @@ public class DataTypes {
     // float data type is used to store numbers in the range of 3.4e-038 to 3.4e+038
 
     // float data type example
-    float price = 10.5f;
+    float price = 101345.5f;
 
     // double data type
     // double data type is used to store floating-point values

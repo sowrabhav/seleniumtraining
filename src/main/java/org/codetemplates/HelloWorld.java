@@ -17,7 +17,6 @@ package org.codetemplates;
 // Every Java program should have at least one class
 // Every Java program should have at least one main method
 
-
 public class HelloWorld {
     public static void main(String[] args) {
         // Using args to pass arguments to the program

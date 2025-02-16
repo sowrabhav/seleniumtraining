@@ -11,5 +11,33 @@ public class Methods {
     // Method accepts input in the form of parameters
     // Method returns output in the form of a return value
 
+    public boolean isPrime(int number) {
+        if (number <= 1) {
+            return false;
+        }
+
+        for (int i = 2; i <= Math.sqrt(number); i++) {
+            if (number % i == 0) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    public boolean isPrime(int number, int iii) {
+        if (number <= 1) {
+            return false;
+        }
+
+        for (long i = 2; i <= Math.sqrt(number); i++) {
+            if (number % i == 0) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
 
 }

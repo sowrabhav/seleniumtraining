@@ -61,9 +61,9 @@ public class AccessControls {
         testAccessControls.add(10, 20);
         testAccessControls.subtract(20, 10);
 
-        TestAccessControls1 testAccessControls1 = new TestAccessControls1();
+        /*TestAccessControls1 testAccessControls1 = new TestAccessControls1();
         testAccessControls1.name = "TestAccessControls1";
-        testAccessControls1.age = 30;
+        testAccessControls1.age = 30;*/
 
     }
 

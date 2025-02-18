@@ -1,0 +1,10 @@
+
+
+18/Feb/2024:
+
+--> Practice on Constructor, static and instance blocks
+--> Debug the multiple classes with the help of breakpoints
+--> Read about JDK, JRE and JVM
+
+
+

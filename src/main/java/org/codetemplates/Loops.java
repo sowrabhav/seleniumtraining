@@ -4,8 +4,6 @@ public class Loops {
 
     public static void main(String[] args) {
 
-
-        // Looping statements
         // Looping statements are used to execute a block of code repeatedly
         // Looping statements are used to execute a block of code repeatedly based on a condition
         // Looping statements are used to execute a block of code repeatedly based on a condition being true or false
@@ -19,6 +17,13 @@ public class Loops {
         for (int i = 0; i < number24; i++) {
             System.out.println("The number is " + i);
         }
+
+        // when do we use for loop?
+        // When we know the number of iterations
+        // When we know the number of iterations based on a condition
+        // When we know the number of iterations based on a condition being true
+        // When we know the number of iterations based on a condition being false
+        // Based on next loop iteration (ex: jump 2 iterations)
 
         // While loop
         // While loop is used to execute a block of code repeatedly based on a condition

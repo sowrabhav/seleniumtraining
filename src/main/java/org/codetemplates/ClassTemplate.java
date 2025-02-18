@@ -2,6 +2,9 @@ package org.codetemplates;
 
 import java.util.List;
 
+
+
+
 //*
 // class description: ClassTemplate
 // ClassTemplate is a template class
@@ -13,6 +16,22 @@ import java.util.List;
 // */
 public class ClassTemplate {
     Button googleSearchButton = new Button();
+//    Button regularButton = new Button(10, 20);
+
+    // A --> B instantiate --> B static, B instance, B constructor
+    // A --> B Static --> C instantiate --> C static, C instance, C constructor
+    // A --> B Instance
+    // A --> B Constructor
+    // A --> A Constructor
+
+    /**
+     * ThisClass Constructor <--
+     *  SuperClass Static block <-- SuperClass Instance block <-- SuperClass Constructor block <--
+     *  anySubClass Static block <-- anySubClass Instance block <-- anySubClass Constructor block
+*/
+    ClassTemplate(){
+        System.out.println("Constructor code block");
+    }
 
     public static void main(String[] args) {
         ClassTemplate classTemplate = new ClassTemplate();
@@ -42,6 +61,25 @@ class Button{
     private int buttonHeight;
     private String buttonColor;
     private boolean buttonEnabled;
+
+    static{
+        System.out.println("Static block");
+    }
+
+    {
+        System.out.println("Instance block");
+    }
+
+    // constructor for regular Button
+    public Button(int buttonWidth, int buttonHeight){
+        this.buttonWidth = buttonWidth;
+        this.buttonHeight = buttonHeight;
+        System.out.println("Button created with width: " + buttonWidth + " and height: " + buttonHeight);
+    }
+
+    public Button() {
+        System.out.println("Constructor block");
+    }
 
     public void clickButton(){
         System.out.println("Button clicked");

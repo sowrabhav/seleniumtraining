@@ -77,8 +77,8 @@ public class Loops {
         int[] numbers = {1, 2, 3, 4, 5};
 
         // Enhanced for loop
-        for (int number28 : numbers) {
-            System.out.println("The number is " + number28);
+        for (int no : numbers) {
+            System.out.println("The number is " + no);
         }
 
         // Break statement
@@ -126,21 +126,6 @@ public class Loops {
 
         // Return statement
         if (number31 > 0) {
-            return;
-        }
-
-        // Branching statements
-        // Branching statements are used to transfer control to another part of the program
-        // Branching statements are used to transfer control to another part of the program based on a condition
-        // Branching statements are used to transfer control to another part of the program based on a condition being true or false
-        // Branching statements are used to transfer control to another part of the program based on a condition being true
-        // Branching statements are used to transfer control to another part of the program based on a condition being false
-
-        // Branching statements example
-        int number32 = 10;
-
-        // Branching statements
-        if (number32 > 0) {
             return;
         }
 

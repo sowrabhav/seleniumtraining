@@ -17,6 +17,42 @@ public class OOPSConcepts {
         // Encapsulation is used to restrict access to the data in an object and only allow access through the object's methods.
         // Encapsulation is used to hide the implementation details of an object and only expose the necessary information to the outside world.
 
+        class encap1{
+            int a;
+            private int b;
+        }
+
+        class Encap2{
+            private int a;
+            private int b;
+
+            Encap2(int val1, int val2){
+                this.a = val1;
+                this.b = val2;
+            }
+
+            public int getA() {
+                a += 10;
+                return a;
+            }
+
+            public int getB() {
+                return b;
+            }
+        }
+
+        class A {
+
+            public static void main(String[] args) {
+                Encap2 encaps2 = new Encap2(10, 20);
+                encaps2.getA();
+                encaps2.getB();
+            }
+
+            Encap2 encap2_1 = new Encap2(100, 200);
+
+        }
+
         // Polymorphism
         // Polymorphism is a feature of object-oriented programming that allows objects to be treated as instances of their parent class.
         // Polymorphism allows you to define methods in a parent class that can be overridden by child classes.
@@ -32,5 +68,6 @@ public class OOPSConcepts {
         // Abstraction is used to define the behavior of an object without revealing the details of how it is implemented.
 
     }
+
 
 }

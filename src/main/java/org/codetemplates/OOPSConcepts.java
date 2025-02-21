@@ -67,6 +67,9 @@ public class OOPSConcepts {
         // Abstraction is used to define the properties and methods of an object without revealing the internal details of how they work.
         // Abstraction is used to define the behavior of an object without revealing the details of how it is implemented.
 
+
+        // Interface
+        // Interface is 100% abstract class
     }
 
 

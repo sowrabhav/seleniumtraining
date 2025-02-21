@@ -1,9 +1,23 @@
 package org.codetemplates;
 
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
 public class Collections {
     public static void main(String[] args) {
+        List<String> names = new ArrayList<>();
+        names.add("saurabha");
+        names.get(0);
+
+
+        Set<Integer> salaries = new HashSet();
+
         System.out.println("Hello, Collections!");
     }
+
+
 
     public static void printArray(int[] arr) {
         for (int i = 0; i < arr.length; i++) {

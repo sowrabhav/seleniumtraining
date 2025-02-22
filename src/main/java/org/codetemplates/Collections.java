@@ -12,6 +12,18 @@ public class Collections {
         names.get(0);
 
 
+        // Array
+        String[] countries  = {"India", "Srilanka", "UAE", "US", "UK"};
+//      Index base allocation
+        System.out.println(countries[0]);
+        for (int i=0; i<countries.length; i++){
+            System.out.println(countries[i]);
+        }
+
+        for (String country: countries){
+            System.out.println(country);
+        }
+
         Set<Integer> salaries = new HashSet();
 
         System.out.println("Hello, Collections!");
@@ -137,6 +149,20 @@ public class Collections {
     // Arrays are fixed in size
     // Collections are dynamic in size
 
+    Object object1 = new Object();
+    Object[] objects = {object1};
+
+
+
+    private void method2(){
+        int i = 10;
+        List vals = new ArrayList();
+        vals.add(i); //x0241h
+        vals.add("baba");  //x0623h
+
+        vals.hashCode();
+    }
+
     // Arrays can store primitive data types and objects
     // Collections can store only objects
 
@@ -146,6 +172,8 @@ public class Collections {
     // Arrays can store only one type of data
     // Collections can store multiple types of data
 
+    //[0, 1, 2, 3]
+    // [(0,0), (0,1), (0,2), (0,3)]
     // Arrays can store only one-dimensional data
     // Collections can store multi-dimensional data
 
@@ -160,12 +188,12 @@ public class Collections {
 
 
     // Types of Collections:
-    // 1. List
-    // 2. Set
-    // 3. Map
-    // 4. Queue
-    // 5. Stack
-    // 6. Deque
+    // 1. List --> Collection of data in an ordered sequence
+    // 2. Set --> Collection of data without duplicates
+    // 3. Map --> Collection of data in a key-value pair
+    // 4. Queue --> Collection of data in a FIFO order
+    // 5. Stack --> Collection of data in a LIFO order
+    // 6. Deque --> Collection of data in a double-ended queue
     // 7. SortedSet
     // 8. SortedMap
     // 9. NavigableSet

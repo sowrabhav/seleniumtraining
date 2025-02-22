@@ -1,4 +1,6 @@
-
+Need to check and getback:
+-- Homogeneous and Heterogeneous collection in collection framework
+-- Generics in collection framework
 
 18/Feb/2024:
 

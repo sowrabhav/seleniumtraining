@@ -1,6 +1,7 @@
 Need to check and getback:
 -- Homogeneous and Heterogeneous collection in collection framework
 -- Generics in collection framework
+-- Strings in new versions of Java
 
 18/Feb/2024:
 
@@ -18,4 +19,6 @@ Need to check and getback:
 
 --> Button, Textbox, link userdefined class development with support of dev tools in chrome/firefox
 
+26/19/2024
 
+--> Collections

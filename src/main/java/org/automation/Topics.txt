@@ -1,0 +1,31 @@
+
+-- *****************   Selenium WebDriver    **************
+-- WebDriver
+-- Locators (By.id, By.name, By.className, By.tagName, By.linkText, By.partialLinkText, By.cssSelector, By.xpath)
+-- Pages, IFrames, Multi tab, Popup, Alert, Window, Cookies, Screenshot, etc.
+-- XPath (Absolute, Relative, Contains, Text, AND, OR, NOT, Functions, Axes, Operators, etc.)
+-- WebTables (Static, Dynamic, Pagination, Sorting, Filtering, etc.)
+-- Firebug
+-- IE Developer Tools
+-- Chrome Developer Tools
+-- WebElements (Button, CheckBox, Radio Button, Drop Down, List Box, Text Box, Text Area, Link, Image, Table, Frame, Alert, Pop Up, File Upload, File Download)
+-- Synchronization (Implicit Wait, Explicit Wait, Fluent Wait, Page Load Timeout, Set Script Timeout)
+-- Actions (Mouse Hover, Drag and Drop, Double Click, Right Click, Keyboard Events)
+-- JavaScript Executor
+-- AutoIT
+-- Sikuli
+-- Robot Class
+-- Headless Browser Testing
+-- Cross Browser Testing
+
+-- All methods of webdriver, webelement, alert, actions, javascript executor, etc.
+-- Selenium IDE
+
+-- Data Driven Testing (Excel, CSV, XML, Database)
+
+-- *****************   Frameworks    **************
+-- TestNG
+-- JUnit
+-- Cucumber
+-- POM (Page Object Model)
+-- Karate (API Testing)

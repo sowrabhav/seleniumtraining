@@ -10,13 +10,20 @@ repositories {
 }
 
 dependencies {
-    testImplementation platform('org.junit:junit-bom:5.10.0')
-    testImplementation 'org.junit.jupiter:junit-jupiter'
+//    testImplementation platform('org.junit:junit-bom:5.10.0')
+    implementation 'org.junit.jupiter:junit-jupiter-api:5.10.0'
+    implementation 'org.junit.jupiter:junit-jupiter-engine:5.10.0'
     implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.28.1'
     //https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-server
     implementation 'org.seleniumhq.selenium:selenium-server:3.14.0'
     //https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-firefox-driver
     implementation 'org.seleniumhq.selenium:selenium-firefox-driver:4.28.0'
+
+    // mysql connector
+    implementation 'com.mysql:mysql-connector-j:8.1.0'
+
+    // Excel reader
+    implementation 'org.apache.poi:poi:5.2.3'
 
 }
 

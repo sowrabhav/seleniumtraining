@@ -1,7 +1,7 @@
 
 -- *****************   Selenium WebDriver    **************
 -- WebDriver
--- Locators (By.id, By.name, By.className, By.tagName, By.linkText, By.partialLinkText, By.cssSelector, By.xpath)
+-- WebElements, Locators (By.id, By.name, By.className, By.tagName, By.linkText, By.partialLinkText, By.cssSelector, By.xpath)
 -- Pages, IFrames, Multi tab, Popup, Alert, Window, Cookies, Screenshot, etc.
 -- XPath (Absolute, Relative, Contains, Text, AND, OR, NOT, Functions, Axes, Operators, etc.)
 -- WebTables (Static, Dynamic, Pagination, Sorting, Filtering, etc.)

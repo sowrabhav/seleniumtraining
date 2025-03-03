@@ -4,14 +4,24 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.firefox.FirefoxProfile;
+import org.openqa.selenium.remote.CapabilityType;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.printf("Hello and welcome!");
+        System.out.println("Hello and welcome!");
+
+        FirefoxOptions options = new FirefoxOptions()
+                .addPreference("browser.startup.page", 1)
+                .addPreference("browser.startup.homepage", "https://www.google.co.uk")
+                .setAcceptInsecureCerts(true)
+                .setProfile(new FirefoxProfile());
+//                .setHeadless(true);
 
 //            System.setProperty("webdriver.gecko.driver", "C:\\drivers\\geckodriver.exe");
         System.setProperty("webdriver.gecko.driver", "/Users/baba/Documents/GitHub/2025-Selenium/seleniumtraining/src/main/resources/drivers/geckodriver");
-        WebDriver driver = new FirefoxDriver();
+        WebDriver driver = new FirefoxDriver(options);
 
         // set browser properties
         driver.manage().window().maximize();

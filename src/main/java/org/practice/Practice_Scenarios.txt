@@ -1,9 +1,11 @@
+--*********************************************************************************************************************
 Need to check and getback:
 -- Homogeneous and Heterogeneous collection in collection framework
 -- Generics in collection framework
 -- Strings in new versions of Java
 -- Exceptions in Java
 
+--*********************************************************************************************************************
 Documentation:
 https://bugbug.io/blog/testing-frameworks/selenium-cheat-sheet/
 
@@ -17,6 +19,8 @@ https://the-internet.herokuapp.com/upload
 https://formy-project.herokuapp.com/
 https://the-internet.herokuapp.com/floating_menu#about
 
+
+--*********************************************************************************************************************
 18/Feb/2024:
 
 --> Practice on Constructor, static and instance blocks

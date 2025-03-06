@@ -65,6 +65,10 @@ public class ByLocators {
         // By.cssSelector("cssselector")
         // By css selector is used to locate an element by css selector
 
+        // css=E#I  -- css=input#login-button
+        // tag[attributeName="attributeValue"]
+
+
 //        html body div.L3eUgb div.o3j99.ikrT4e.om7nvf form div div.A8SBwf div.RNNXgb div.SDkEP div.a4bIc textarea#APjFqb.gLFyf
 //        /html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div[1]/div[2]/textarea -- absolute xpath
 //        //textarea[@id='APjFqb'] -- relative xpath
@@ -72,6 +76,29 @@ public class ByLocators {
         // By xpath
         // By.xpath("xpath")
         // By xpath is used to locate an element by xpath
+
+
+        // html/body/form/div/span[text()='tab1']/  - absolute xpath
+
+        // over all parents or child
+        //span[text()='tab1']/  - relative xpath
+        //button[@jsname='Cuz2Ue' and text()='Forgot email?']
+        // @attributename = 'attributevalue'
+        // text() = 'textvalue'
+        //span[contains(text(),'tab')]/
+
+        //input[@name='user-name' or @name='username']/../div
+        //html//input[@id='user-name']/../../div[2]/input
+
+        // --> parent to child or any grandchild traversal
+        // .. --> child to parent traversal
+        // / --> direct child
+        // :: --> following tag for preceding or following sibling
+        // @ --> attribute
+        // $ --> ends with
+        // * --> contains
+        // ^ --> starts with
+
 
 
         driver.quit();

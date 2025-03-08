@@ -1,0 +1,27 @@
+
+Application: https://www.saucedemo.com/
+Browser: Chrome
+Properties:
+1. Maximize the window
+2. Accept the cookies
+
+Scenario 1:
+Step 1: Invoke the browser (Chrome)
+Step 2: Maximize the window
+Step 3: Accept the cookies
+Step 4: Launch the application (https://www.saucedemo.com/)
+Step 5: Enter the username (standard_user)
+Step 6: Enter the password (secret_sauce)
+Step 7: Click on the login button
+Step 8: Verify the login is successful
+Step 9: Logout from the application
+Step 10: Close the browser
+
+Note : use xpath for username, css for password and id for login button
+
+Manual Testing scenarios:
+Write scenarios on Homepage, Products, Cart, Checkout, Finish
+
+
+
+

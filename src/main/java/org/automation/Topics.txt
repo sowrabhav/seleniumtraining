@@ -23,6 +23,24 @@
 
 -- Data Driven Testing (Excel, CSV, XML, Database)
 
+        // Types of webelements in Selenium
+        // 1. Textbox - input (set the value)
+        // 1a. Textarea - textarea (set the value)
+        // 2. Button - button (click)
+        // 3. Link - a (click)
+        // 4. Image - img (click)
+        // 5. Checkbox - input (click)  (select, deselect) (isSelected)
+        // 6. Radio button / Radio group - input (click) (select, deselect) (isSelected)
+        // 7. Dropdown - select (selectByVisibleText, selectByValue, selectByIndex)
+        // 8. Listbox - select (selectByVisibleText, selectByValue, selectByIndex)
+        // 9. WebTable - table (read the data)
+        // 10. Frame - iframe (switchTo)
+        // 11. Alert - alert (accept, dismiss, getText, sendKeys)
+        // 12. File upload - input (sendKeys)
+        // 13. Window - window (switchTo)
+
+
+
 -- *****************   Frameworks    **************
 -- TestNG
 -- JUnit

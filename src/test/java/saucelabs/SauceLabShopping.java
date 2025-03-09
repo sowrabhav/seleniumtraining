@@ -11,6 +11,14 @@ public class SauceLabShopping {
         SauceLabShopping sauceLabShopping = new SauceLabShopping();
         sauceLabShopping.swagLabsLogin();
 
+/**
+ * 1. Instantiate the WebDriver
+ * 2. Navigate to the URL
+ * 3. Find the element
+ * 4. Perform the action
+ * 5. Close the browser
+ * 6. Quit the WebDriver
+ */
 
 
     }
@@ -42,7 +50,8 @@ public class SauceLabShopping {
         driver.findElement(By.cssSelector("input[type='password'][id='password']")).sendKeys("secret_sauce");
 
         // 5. Click on the login button
-        driver.findElement(By.id("login-button")).click();
+//        driver.findElement(By.id("login-button")).click();
+        driver.findElement(By.id("login-button")).submit();
 
         // 6. Validate the login is successful
         WebElement swag_Labs_Logo = driver.findElement(By.xpath("//div[text()='Swag Labs']"));
@@ -62,4 +71,5 @@ public class SauceLabShopping {
         driver.quit();
 
     }
+
 }

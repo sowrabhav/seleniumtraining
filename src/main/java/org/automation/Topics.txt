@@ -3,7 +3,7 @@
 -- WebDriver
 -- WebElements, Locators (By.id, By.name, By.className, By.tagName, By.linkText, By.partialLinkText, By.cssSelector, By.xpath)
 -- Pages, IFrames, Multi tab, Popup, Alert, Window, Cookies, Screenshot, etc.
--- XPath (Absolute, Relative, Contains, Text, AND, OR, NOT, Functions, Axes, Operators, etc.)
+-- XPath (Absolute, Relative, Contains, Text, AND, OR, NOT, Functions, Operators, etc.)
 -- WebTables (Static, Dynamic, Pagination, Sorting, Filtering, etc.)
 -- Firebug
 -- IE Developer Tools

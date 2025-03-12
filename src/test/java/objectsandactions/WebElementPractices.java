@@ -30,8 +30,8 @@ public class WebElementPractices {
 //        webElementPractices.fileDownload(driver);
 //        webElementPractices.fileUpload(driver);
 //        webElementPractices.floatingMenu(driver);
-        webElementPractices.frames(driver);
-        webElementPractices.multipleWindows(driver);
+//        webElementPractices.frames(driver);
+//        webElementPractices.multipleWindows(driver);
 //        webElementPractices.multipleTabs(driver);
 //        webElementPractices.horizontalSlide(driver);
 //        webElementPractices.hovers(driver);
@@ -51,7 +51,9 @@ public class WebElementPractices {
 
         // Open a new tab and switch to it
         ((JavascriptExecutor) driver).executeScript("window.open('https://www.facebook.com', '_blank');");
+
         ArrayList<String> tabs = new ArrayList<>(driver.getWindowHandles());
+
         driver.switchTo().window(tabs.get(1));
         System.out.println("Title of second tab: " + driver.getTitle());
 
@@ -62,6 +64,7 @@ public class WebElementPractices {
         // Switch back to the original tab
         driver.switchTo().window(tabs.get(0));
         System.out.println("Title of first tab after switching back: " + driver.getTitle());
+        driver.close();
 
         driver.quit();
     }
@@ -89,6 +92,9 @@ public class WebElementPractices {
     }
 
     private void multipleWindows(WebDriver driver) {
+        // Any new window open by the driver will have a unique window handle
+        // new window will be switched by validating the title of the window
+
         driver.get("https://the-internet.herokuapp.com/windows");
         driver.findElement(By.xpath("//a[contains(text(),'Click Here')]")).click();
 
@@ -109,11 +115,14 @@ public class WebElementPractices {
         driver.get("https://the-internet.herokuapp.com/key_presses");
         WebElement body = driver.findElement(By.id("target"));
 
-        Actions actions = new Actions(driver);
-        actions.sendKeys("A").perform();
 
-        actions.sendKeys(body, Keys.SHIFT).perform();
-        actions.sendKeys(body, Keys.CONTROL).perform();
+        Actions actions = new Actions(driver);
+        actions.sendKeys(body, "Alpha").perform();
+
+//        actions.sendKeys(body, Keys.SHIFT).perform();
+        actions.keyDown(body, Keys.CONTROL).perform();
+        actions.sendKeys(body, "A").perform();
+        actions.keyUp(body, Keys.CONTROL).perform();
 
         driver.quit();
     }
@@ -148,17 +157,27 @@ public class WebElementPractices {
     private void hovers(WebDriver driver) throws InterruptedException {
         driver.get("https://the-internet.herokuapp.com/hovers");
         WebElement element = driver.findElement(By.xpath("//div[@class='figure'][2]"));
+
         Actions actions = new Actions(driver);
         actions.moveToElement(element).perform();
-        Thread.sleep(10000);
+        Thread.sleep(5000);
+
+        WebElement element2 = driver.findElement(By.xpath("//div[@class='figure'][1]"));
+
+        actions.moveToElement(element2).perform();
+        Thread.sleep(5000);
+
         driver.quit();
     }
 
-    private void horizontalSlide(WebDriver driver) {
+    private void horizontalSlide(WebDriver driver) throws InterruptedException {
         driver.get("https://the-internet.herokuapp.com/horizontal_slider");
         WebElement slider = driver.findElement(By.xpath("//input[@type='range']"));
+
         Actions actions = new Actions(driver);
         actions.dragAndDropBy(slider, 100, 0).perform();
+        Thread.sleep(2000);
+        actions.dragAndDropBy(slider, 0, 0).perform();
         driver.quit();
     }
 

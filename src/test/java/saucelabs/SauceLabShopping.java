@@ -5,25 +5,28 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.remote.RemoteWebDriver;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.time.Duration;
 
 public class SauceLabShopping {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws MalformedURLException {
+        // 1. Instantiate the WebDriver
+        FirefoxOptions options = new FirefoxOptions();
+        WebDriver driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), options);
+
         SauceLabShopping sauceLabShopping = new SauceLabShopping();
-        sauceLabShopping.swagLabsLogin();
+        sauceLabShopping.swagLabsLogin(driver);
 
-/**
- * 1. Instantiate the WebDriver
- * 2. Navigate to the URL
- * 3. Find the element
- * 4. Perform the action
- * 5. Close the browser
- * 6. Quit the WebDriver
- */
-
+        // convert into selenium grid code
 
     }
 
-    private void swagLabsLogin(){
+    private void swagLabsLogin(WebDriver driver) {
 
         /**
          * 1. Instantiate the WebDriver
@@ -34,11 +37,10 @@ public class SauceLabShopping {
          * 6. Quit the WebDriver
          */
 
-        // 1. Instantiate the WebDriver
-        WebDriver driver = new ChromeDriver();
         // set browser properties
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
         // 2. Navigate to the URL
         driver.get("https://www.saucedemo.com/");

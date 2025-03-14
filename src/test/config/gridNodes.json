@@ -1,0 +1,16 @@
+{
+  "capabilities": [
+    {
+      "browserName": "chrome",
+      "maxInstances": 5
+    },
+    {
+      "browserName": "firefox",
+      "maxInstances": 5
+    }
+  ],
+  "configuration": {
+    "hub": "http://localhost:4444/grid/register",
+    "maxSession": 5
+  }
+}

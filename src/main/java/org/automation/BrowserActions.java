@@ -1,5 +1,6 @@
 package org.automation;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -13,6 +14,14 @@ public class BrowserActions {
         browserActions.getDriver("chrome");
 
         driver.get("https://www.google.com");
+
+        driver.get("https://www.facebook.com");
+
+        driver.get("https://www.microsoft.com");
+
+        // Open a new tab and switch to it
+        ((JavascriptExecutor) driver).executeScript("window.open('https://www.facebook.com', '_blank');");
+
         driver.navigate().to("https://www.facebook.com");
 
         System.out.println(driver.getCurrentUrl());

@@ -1,5 +1,6 @@
 package objectsandactions;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -8,6 +9,7 @@ import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.ui.Select;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Set;
 
@@ -39,9 +41,46 @@ public class WebElementPractices {
 //        webElementPractices.jscriptError(driver);
 //        webElementPractices.keyPresses(driver);
 //        webElementPractices.jScriptExecutor(driver);
+//        webElementPractices.screenShot(driver);
+
+//        Challenges in Automation
+//                1. Test Data
+//                2. Synchronization between Selenium and Application
+
+        driver.get("https://www.facebook.com"); // 60 seconds default timeout
+        driver.getTitle();  // response time 62-65 seconds
+
+        if (driver.getTitle().equals("Facebook - Log In or Sign Up")) {
+            System.out.println("You are on the right page");
+        } else {
+            System.out.println("You are on the wrong page");
+        }
+
+
+        driver.findElement(By.id("email")).sendKeys("sample@example.com");
+        driver.findElement(By.id("pass")).sendKeys("password");
+        webElementPractices.screenShot(driver);
+        driver.findElement(By.id("submit")).click();
 
         System.out.println("Hello World");
 
+    }
+
+    private void screenShot(WebDriver driver) {
+        // Take a screenshot of the current page and save it to a file
+        File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+
+        // Define the destination path
+        String destinationPath = "src/test/results/screenshots/" + screenshot.getName() + "_"+ System.currentTimeMillis() + ".png";
+
+        // Save the screenshot to the destination path
+        try {
+            File destinationFile = new File(destinationPath);
+            FileUtils.copyFile(screenshot, destinationFile);
+            System.out.println("Screenshot saved to: " + destinationFile.getAbsolutePath());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     private void multipleTabs(WebDriver driver) {
@@ -64,6 +103,9 @@ public class WebElementPractices {
         // Switch back to the original tab
         driver.switchTo().window(tabs.get(0));
         System.out.println("Title of first tab after switching back: " + driver.getTitle());
+
+        screenShot(driver);
+
         driver.close();
 
         driver.quit();

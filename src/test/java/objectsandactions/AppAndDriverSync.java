@@ -1,6 +1,7 @@
 package objectsandactions;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -31,28 +32,33 @@ public class AppAndDriverSync {
 
         driver.findElement(By.xpath("//button[contains(text(),'Remove')]")).click();
 
+        int max_time = 0;
         // Wait for the loading to disappear by thread.sleep
-        while (driver.findElement(By.id("loading")).isDisplayed()) {
+        while (driver.findElement(By.id("loading")).isDisplayed() || max_time >= 10) {
             System.out.println("Waiting for loading to disappear");
             Thread.sleep(1000);
+            max_time++;
         }
 
         // Explicit Wait for the loading to disappear
-        Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("loading")));
+//        Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+//        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("loading")));
 
         // Fluent Wait for the loading to disappear
-        Wait<WebDriver> fluentWait = new FluentWait<>(driver)
-                .withTimeout(Duration.ofSeconds(30))
-                .pollingEvery(Duration.ofSeconds(1))
-                .ignoring(NoSuchElementException.class);
+        /*Wait<WebDriver> fluentWait = new FluentWait<>(driver)
+                .withTimeout(Duration.ofSeconds(2))
+                .pollingEvery(Duration.ofMillis(500))
+                .ignoring(TimeoutException.class)
+                .ignoring(NullPointerException.class);
 
-        fluentWait.until(new Function<WebDriver, Boolean>() {
+        fluentWait.until(ExpectedConditions.textToBe(By.id("message"), "It's gone!"));*/
+
+        /*fluentWait.until(new Function<WebDriver, Boolean>() {
             public Boolean apply(WebDriver driver) {
                 WebElement loadingElement = driver.findElement(By.id("loading"));
                 return !loadingElement.isDisplayed();
             }
-        });
+        });*/
 
         driver.quit();
     }
@@ -75,7 +81,7 @@ public class AppAndDriverSync {
         }
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10)); // Set implicit wait
+//        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10)); // Set implicit wait
         return driver;
 
     }

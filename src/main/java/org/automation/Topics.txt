@@ -8,11 +8,11 @@
 -- Pages, IFrames, Multi tab, Popup, Alert, Window, Cookies, Screenshot, etc., - Done
 -- XPath (Absolute, Relative, Contains, Text, AND, OR, NOT, Functions, Operators, etc.) - Done
 -- WebTables (Static, Dynamic, Pagination, Sorting, Filtering, etc.)
--- Synchronization (Implicit Wait, Explicit Wait, Fluent Wait, Page Load Timeout, Set Script Timeout) "https://testgrid.io/blog/waits-in-selenium/"
--- Firebug
+-- Synchronization (Implicit Wait, Explicit Wait, Fluent Wait, Page Load Timeout, Set Script Timeout) "https://testgrid.io/blog/waits-in-selenium/" - Done
+-- Firebug (Firefox)
 -- IE Developer Tools
 -- Chrome Developer Tools
--- JavaScript Executor
+-- JavaScript Executor - Done
 -- AutoIT
 -- Sikuli
 -- Robot Class

@@ -1,5 +1,6 @@
 
 -- *****************   Selenium WebDriver    **************
+-- Selenium IDE
 -- WebDriver - Done
 -- WebElements, Locators (By.id, By.name, By.className, By.tagName, By.linkText, By.partialLinkText, By.cssSelector, By.xpath) - Done
 -- WebElements (Button, CheckBox, Radio Button, Drop Down, List Box, Text Box, Text Area, Link, Image, Table, Frame, Alert, Pop Up, File Upload, File Download) - Done
@@ -13,32 +14,21 @@
 -- IE Developer Tools
 -- Chrome Developer Tools
 -- JavaScript Executor - Done
+-- Selenium Grid
 -- AutoIT
 -- Sikuli
 -- Robot Class
 -- Headless Browser Testing
 -- Cross Browser Testing
-
--- All methods of webdriver, webelement, alert, actions, javascript executor, etc.
--- Selenium IDE
-
 -- Data Driven Testing (Excel, CSV, XML, Database)
-
-        // Types of webelements in Selenium
-        // 1. Textbox - input (set the value)
-        // 1a. Textarea - textarea (set the value)
-        // 2. Button - button (click)
-        // 3. Link - a (click)
-        // 4. Image - img (click)
-        // 5. Checkbox - input (click)  (select, deselect) (isSelected)
-        // 6. Radio button / Radio group - input (click) (select, deselect) (isSelected)
-        // 7. Dropdown - select (selectByVisibleText, selectByValue, selectByIndex)
-        // 8. Listbox - select (selectByVisibleText, selectByValue, selectByIndex)
-        // 9. WebTable - table (read the data)
-        // 10. Frame - iframe (switchTo)
-        // 11. Alert - alert (accept, dismiss, getText, sendKeys)
-        // 12. File upload - input (sendKeys)
-        // 13. Window - window (switchTo)
+-- Exceptions (NoSuchElementException, ElementNotVisibleException, ElementNotSelectableException, TimeoutException, WebDriverException, etc.)
+-- Reporting (Extent Reports, Allure Reports, TestNG Reports, JUnit Reports, etc.)
+-- Logging (Log4j, Logback, etc.)
+-- TestNG (Annotations, Groups, Priorities, Data Providers, Parameters, Listeners, etc.)
+-- JUnit (Annotations, Assertions, Test Suite, etc.)
+-- Cucumber (Gherkin, Feature File, Step Definition, Runner, Hooks, Tags, etc.)
+-- POM (Page Object Model)
+-- Karate (API Testing)
 
 
 

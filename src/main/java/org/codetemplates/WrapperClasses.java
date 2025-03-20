@@ -19,6 +19,7 @@ public class WrapperClasses {
         // Byte
         // Byte is a wrapper class for the primitive data type byte
 
+/*
         // Byte example
         Byte b = new Byte((byte) 10);
         System.out.println(b);
@@ -72,6 +73,7 @@ public class WrapperClasses {
         Boolean bool = new Boolean(true);
         System.out.println(bool);
 
+*/
 
 
         // new way of creating wrapper classes

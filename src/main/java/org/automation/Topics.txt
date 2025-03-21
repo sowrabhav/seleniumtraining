@@ -10,17 +10,9 @@
 -- XPath (Absolute, Relative, Contains, Text, AND, OR, NOT, Functions, Operators, etc.) - Done
 -- WebTables (Static, Dynamic, Pagination, Sorting, Filtering, etc.)
 -- Synchronization (Implicit Wait, Explicit Wait, Fluent Wait, Page Load Timeout, Set Script Timeout) "https://testgrid.io/blog/waits-in-selenium/" - Done
--- Firebug (Firefox)
--- IE Developer Tools
--- Chrome Developer Tools
--- JavaScript Executor - Done
--- Selenium Grid
--- AutoIT
--- Sikuli
--- Robot Class
 -- Headless Browser Testing
 -- Cross Browser Testing
--- Data Driven Testing (Excel, CSV, XML, Database)
+-- Data Driven Testing (Excel, CSV, XML, Json, Flat file, Database, etc.,)
 -- Exceptions (NoSuchElementException, ElementNotVisibleException, ElementNotSelectableException, TimeoutException, WebDriverException, etc.)
 -- Reporting (Extent Reports, Allure Reports, TestNG Reports, JUnit Reports, etc.)
 -- Logging (Log4j, Logback, etc.)
@@ -29,6 +21,16 @@
 -- Cucumber (Gherkin, Feature File, Step Definition, Runner, Hooks, Tags, etc.)
 -- POM (Page Object Model)
 -- Karate (API Testing)
+
+Good to have:
+-- Firebug (Firefox)
+-- IE Developer Tools
+-- Chrome Developer Tools
+-- JavaScript Executor - Done
+-- Selenium Grid
+-- AutoIT
+-- Sikuli
+-- Robot Class
 
 
 

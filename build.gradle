@@ -44,6 +44,9 @@ dependencies {
     // https://mvnrepository.com/artifact/org.slf4j/slf4j-api
     implementation 'org.slf4j:slf4j-api:2.0.16'
 
+    implementation 'org.json:json:20210307'
+
+    implementation 'org.yaml:snakeyaml:2.0'
 
 }
 

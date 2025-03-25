@@ -122,7 +122,7 @@ public class SauceLabsShoppingDP {
 
         // Validate no errors occured on login page
         List<WebElement> error_Message = driver.findElements(By.xpath("//h3[@data-test='error']"));
-        Assertions.assertFalse(error_Message.isDisplayed());
+        Assertions.assertTrue(error_Message.isEmpty(), "Error message is displayed, but it should not be.");
 
         // 6. Validate the login is successful
         WebElement swag_Labs_Logo = driver.findElement(By.xpath("//div[text()='Swag Labs']"));

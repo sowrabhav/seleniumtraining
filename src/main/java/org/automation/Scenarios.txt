@@ -23,5 +23,155 @@ Manual Testing scenarios:
 Write scenarios on Homepage, Products, Cart, Checkout, Finish
 
 
+--*********************************************  Java Collections Scenarios  *********************************************--
+Practice Scenarios for Java Collections framework:
 
+1. Create and Manipulate an ArrayList:
+Create an ArrayList of strings.
+Add elements to the list.
+Remove an element from the list.
+Iterate through the list and print each element.
+
+2. Use a HashMap:
+Create a HashMap to store key-value pairs.
+Add entries to the map.
+Retrieve a value by its key.
+Iterate through the map and print all key-value pairs.
+
+3. Use a HashSet:
+Create a HashSet of integers.
+Add elements to the set.
+Check if an element exists in the set.
+Iterate through the set and print each element.
+
+4. Use a LinkedList:
+Create a LinkedList of strings.
+Add elements to the list.
+Remove the first and last elements.
+Iterate through the list and print each element.
+
+5. Use a TreeSet:
+   Create a TreeSet of strings.
+   Add elements to the set.
+   Iterate through the set and print each element in natural order.
+
+
+--*********************************************  Swag labs application Scenarios  *********************************************--
+Scenarios for Swag Labs Application
+
+1. Login Functionality
+Valid login with correct username and password.
+Invalid login with incorrect username and/or password.
+Login with empty username and/or password fields.
+
+2. Logout Functionality
+Successful logout after logging in.
+Verify that the user is redirected to the login page after logout.
+
+3. Product Page
+Verify that all products are displayed correctly.
+Add a product to the cart and verify that it appears in the cart.
+Remove a product from the cart and verify that it is removed.
+
+4. Cart Functionality
+Add multiple products to the cart and verify the total price.
+Remove products from the cart and verify the cart is updated.
+Proceed to checkout and verify the checkout process.
+
+5. Checkout Process
+Fill in the checkout information and complete the purchase.
+Verify that the order confirmation page is displayed.
+Verify that the order details are correct.
+
+6. Sorting Products
+Sort products by name (A to Z, Z to A).
+Sort products by price (low to high, high to low).
+Verify that the products are sorted correctly.
+
+7. Error Messages
+Verify error messages for invalid login attempts.
+Verify error messages for missing checkout information.
+
+8. Navigation
+Verify that the navigation menu works correctly.
+Verify that the user can navigate to different pages (e.g., product page, cart, checkout).
+
+
+--*********************************************  Java Practice Scenarios  *********************************************--
+Practice Scenarios for Java Classes, Interfaces, and Methods
+
+Classes
+
+1. Create a Class:
+
+Create a class named Person with attributes name, age, and address.
+Create a class named Car with attributes make, model, and year.
+
+2. Inheritance:
+
+Create a base class Animal with a method makeSound().
+Create derived classes Dog and Cat that extend Animal and override the makeSound() method.
+
+3. Encapsulation:
+
+Create a class BankAccount with private attributes accountNumber, balance, and accountHolderName.
+Provide public getter and setter methods for each attribute.
+
+4. Polymorphism:
+
+Create a class Shape with a method draw().
+Create derived classes Circle, Rectangle, and Triangle that override the draw() method.
+
+5. Abstract Class:
+
+Create an abstract class Employee with an abstract method calculateSalary().
+Create derived classes FullTimeEmployee and PartTimeEmployee that implement the calculateSalary() method.
+
+
+Interfaces
+
+1. Create an Interface:
+
+Create an interface Vehicle with methods start(), stop(), and accelerate().
+
+2. Implementing Interfaces:
+
+Create classes Car and Bike that implement the Vehicle interface.
+
+3. Multiple Interfaces:
+
+Create interfaces Flyable and Swimmable with methods fly() and swim(), respectively.
+Create a class Duck that implements both Flyable and Swimmable interfaces.
+
+4. Default Methods in Interfaces:
+
+Create an interface Printer with a default method print() that prints a default message.
+Create a class DocumentPrinter that implements the Printer interface and overrides the print() method.
+
+5. Functional Interfaces:
+
+Create a functional interface Calculator with a method calculate(int a, int b).
+Use a lambda expression to implement the Calculator interface.
+
+Methods
+
+1. Method Overloading:
+
+Create a class MathOperations with overloaded methods add(int a, int b), add(double a, double b), and add(int a, int b, int c).
+
+2. Method Overriding:
+
+Create a base class Parent with a method showMessage().
+Create a derived class Child that overrides the showMessage() method.
+
+3. Static Methods:
+
+Create a class Utility with a static method convertToUpperCase(String input) that converts a string to uppercase.
+
+4. Recursive Methods:
+
+Create a class Factorial with a method calculateFactorial(int n) that calculates the factorial of a number using recursion.
+
+5. Method with Varargs:
+Create a class Statistics with a method calculateAverage(int... numbers) that calculates the average of a variable number of integers
 

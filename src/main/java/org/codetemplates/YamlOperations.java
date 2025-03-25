@@ -10,7 +10,7 @@ import java.util.Map;
 
 public class YamlOperations {
     public static void main(String[] args) {
-        Constructor constructor = new Constructor(TestDataWrapper.class);
+        /*Constructor constructor = new Constructor(TestDataWrapper.class);
         TypeDescription testDataWrapperDescription = new TypeDescription(TestDataWrapper.class);
         testDataWrapperDescription.addPropertyParameters("testData", TestData.class);
         constructor.addTypeDescription(testDataWrapperDescription);
@@ -24,7 +24,7 @@ public class YamlOperations {
             }
         } catch (Exception e) {
             e.printStackTrace();
-        }
+        }*/
     }
 }
 

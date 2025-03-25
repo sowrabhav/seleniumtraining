@@ -10,13 +10,21 @@ repositories {
 }
 
 dependencies {
-//    testImplementation platform('org.junit:junit-bom:5.10.0')
+    // JUnit 5
     implementation 'org.junit.jupiter:junit-jupiter-api:5.10.0'
     implementation 'org.junit.jupiter:junit-jupiter-engine:5.10.0'
+
+    // TestNG
+    testImplementation 'org.testng:testng:7.8.0'
+
+    // Cucumber
+    implementation 'io.cucumber:cucumber-java:7.20.1'
+    implementation 'io.cucumber:cucumber-core:7.20.1'
+    testImplementation 'io.cucumber:cucumber-junit:7.20.1'
+
+    // Selenium
     implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.28.1'
-    //https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-server
     implementation 'org.seleniumhq.selenium:selenium-server:3.14.0'
-    //https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-firefox-driver
     implementation 'org.seleniumhq.selenium:selenium-firefox-driver:4.28.0'
 
     // mysql connector
@@ -25,29 +33,19 @@ dependencies {
     // Excel reader
     implementation 'org.apache.poi:poi:5.2.3'
 
-    // https://mvnrepository.com/artifact/org.testng/testng
-    testImplementation 'org.testng:testng:7.8.0'
-
-    // https://mvnrepository.com/artifact/io.cucumber/cucumber-java
-    implementation 'io.cucumber:cucumber-java:7.20.1'
-
-    // https://mvnrepository.com/artifact/io.cucumber/cucumber-core
-    implementation 'io.cucumber:cucumber-core:7.20.1'
-
-    // https://mvnrepository.com/artifact/io.cucumber/cucumber-junit
-    testImplementation 'io.cucumber:cucumber-junit:7.20.1'
-
-
-    // https://mvnrepository.com/artifact/com.relevantcodes/extentreports
-    implementation 'com.relevantcodes:extentreports:2.41.2'
-
-    // https://mvnrepository.com/artifact/org.slf4j/slf4j-api
-    implementation 'org.slf4j:slf4j-api:2.0.16'
-
+    //Json
     implementation 'org.json:json:20210307'
 
+    //Yaml
     implementation 'org.yaml:snakeyaml:2.0'
 
+    // Extent reports
+    implementation 'com.relevantcodes:extentreports:2.41.2'
+    implementation 'com.aventstack:extentreports:5.1.1'
+
+    // Log4j
+//    implementation 'org.slf4j:slf4j-api:2.0.16'
+    implementation 'ch.qos.logback:logback-classic:1.4.11'
 }
 
 test {

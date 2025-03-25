@@ -7,9 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import utils.DriverUtils;
 
 import java.time.Duration;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class WebTablePractice extends DriverUtils {
     // Table tags (table, thead, tbody, tr, th, td)
@@ -50,8 +48,8 @@ public class WebTablePractice extends DriverUtils {
             System.out.println(header.getText());
         }*/
 
-        /*// Get all row data from the table (table, row number)
-        List<WebElement> row1Data = readRowData(table, 1);
+        // Get all row data from the table (table, row number)
+/*        List<WebElement> row1Data = readRowData(table, 1);
 
         // print row data
         for (WebElement data : row1Data) {
@@ -66,7 +64,10 @@ public class WebTablePractice extends DriverUtils {
             System.out.println(data.getText());
         }*/
 
-        // Get all data from table
+        // validate column1Data is in sorted order
+
+
+        /*// Get all data from table
         Map<String, List<WebElement>> allData = readAllData(table);
 
         // print all data
@@ -75,15 +76,22 @@ public class WebTablePractice extends DriverUtils {
             for (WebElement data : entry.getValue()) {
                 System.out.println(data.getText());
             }
-        }
+        }*/
 
 //        table = driver.findElement(By.xpath("//table[@id='table1']"));
 //        DriverUtils.highlightElement(driver, table);
 //
 //        // get row count of the table
 //        System.out.println("Row count: " + getRowCount(table));
+        clickEditOrDelete(table, 7, "ed");
 
         driver.quit();
+    }
+
+    //inputs - Table/tbody/tr[1]/td[7]
+    //inputs - Table/tbody/tr[7]/td[7]
+    public static void clickEditOrDelete(WebElement table, int row, String action) {
+        table.findElement(By.xpath("//tr[" + row + "]/td[7]/a[text()='" + action + "']")).click();
     }
 
     public static int getRowCount(WebElement table) {

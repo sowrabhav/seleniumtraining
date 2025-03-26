@@ -1,5 +1,7 @@
 package saucelabs;
 
+import junittests.saucelabstests;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
@@ -11,6 +13,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -31,6 +35,7 @@ public class SauceLabsShoppingDP {
 //    4. xml
 //    5. Json
 //    6. Yaml
+    static Logger log = LoggerFactory.getLogger(SauceLabsShoppingDP.class);
 
     static SauceLabsShoppingDP sauceLabShopping = new SauceLabsShoppingDP();
 
@@ -62,8 +67,9 @@ public class SauceLabsShoppingDP {
                     System.out.print(row.getCell(j).getStringCellValue() + " ");
                 }*/
                 // Step 1: Login to the application
-                sauceLabShopping.swagLabsLogin(driver, row.getCell(0).getStringCellValue(), row.getCell(1).getStringCellValue());
-                System.out.println();
+                sauceLabShopping.swagLabsValidUsersLogin(driver, row.getCell(0).getStringCellValue(), row.getCell(1).getStringCellValue());
+                log.info("Login successful for user: " + row.getCell(0).getStringCellValue());
+//                System.out.println("Login successful for user: " + row.getCell(0).getStringCellValue());
             }
 
         } catch (FileNotFoundException e) {
@@ -71,8 +77,6 @@ public class SauceLabsShoppingDP {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
-
 
         // Step 2: Validate the login is successful for valid users
 
@@ -99,7 +103,7 @@ public class SauceLabsShoppingDP {
 
     // Description: Test the login functionality of the Swag Labs application
 
-    private void swagLabsLogin(WebDriver driver, String userName, String Password) {
+    private void swagLabsValidUsersLogin(WebDriver driver, String userName, String Password) {
 
         /**
          * 1. Instantiate the WebDriver
@@ -117,7 +121,6 @@ public class SauceLabsShoppingDP {
         driver.findElement(By.cssSelector("input[type='password'][id='password']")).sendKeys(Password);
 
         // 5. Click on the login button
-//        driver.findElement(By.id("login-button")).click();
         driver.findElement(By.id("login-button")).submit();
 
         // Validate no errors occured on login page

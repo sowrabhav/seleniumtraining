@@ -1,6 +1,4 @@
-package org.practice;
-
-import org.apache.xml.utils.QName;
+package org.javapractice;
 
 public class ClassObject {
 

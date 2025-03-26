@@ -1,4 +1,4 @@
-package org.practice;
+package org.javapractice;
 
 public class Vehicle {
     String color;

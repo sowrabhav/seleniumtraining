@@ -8,7 +8,7 @@ public class TxtDataReader {
 
     public static void main(String[] args) {
         try {
-            List<String> lines = Files.readAllLines(Paths.get("TestData.txt"));
+            List<String> lines = Files.readAllLines(Paths.get("/Users/baba/Documents/GitHub/2025-Selenium/seleniumtraining/src/main/resources/testdata/TestData.txt"));
             for (String line : lines) {
                 String[] parts = line.split("\\|");
                 String username = parts[0];

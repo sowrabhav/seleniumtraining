@@ -1,8 +1,10 @@
 <testData>
+    <!--Comment this line-->
     <test>
         <username>testUser1</username>
         <password>password1</password>
     </test>
+    <!--User is invalid test data to test-->
     <test>
         <username>testUser2</username>
         <password>password2</password>

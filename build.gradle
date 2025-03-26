@@ -36,6 +36,8 @@ dependencies {
     //Json
     implementation 'org.json:json:20210307'
 
+    implementation 'com.google.code.gson:gson:2.10.1'
+
     //Yaml
     implementation 'org.yaml:snakeyaml:2.0'
 

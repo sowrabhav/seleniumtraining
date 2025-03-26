@@ -1,4 +1,4 @@
-package org.practice;
+package org.javapractice;
 
 class A {
     int a=100;

@@ -33,7 +33,7 @@ Remove an element from the list.
 Iterate through the list and print each element.
 
 2. Use a HashMap:
-Create a HashMap to store key-value pairs.
+Create a HashMap to store key-value pairs. (String, String), (Integer, String), (String, Integer), (String, WebElement)
 Add entries to the map.
 Retrieve a value by its key.
 Iterate through the map and print all key-value pairs.
@@ -50,14 +50,14 @@ Add elements to the list.
 Remove the first and last elements.
 Iterate through the list and print each element.
 
-5. Use a TreeSet:
+5. Use a Set/TreeSet:
    Create a TreeSet of strings.
    Add elements to the set.
    Iterate through the set and print each element in natural order.
 
 
 --*********************************************  Swag labs application Scenarios  *********************************************--
-Scenarios for Swag Labs Application
+Scenarios for Swag Labs Application (Execute manually and automate using Selenium WebDriver):
 
 1. Login Functionality
 Valid login with correct username and password.
@@ -102,9 +102,9 @@ Practice Scenarios for Java Classes, Interfaces, and Methods
 
 Classes
 
-1. Create a Class:
+1. Create a Class: (input, table, a, radiobutton, checkbox, button, link)
 
-Create a class named Person with attributes name, age, and address.
+Create a class named Person with attributes name, age, and address. (members/variables, getters and setters, constructors, methods(if applicable), toString, equals, hashcode)
 Create a class named Car with attributes make, model, and year.
 
 2. Inheritance:

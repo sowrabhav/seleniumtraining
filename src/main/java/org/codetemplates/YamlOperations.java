@@ -9,11 +9,12 @@ import java.util.List;
 import java.util.Map;
 
 public class YamlOperations {
-    public static void main(String[] args) {
-        /*Constructor constructor = new Constructor(TestDataWrapper.class);
+    /*public static void main(String[] args) {
+        Constructor constructor = new Constructor(TestDataWrapper.class);
         TypeDescription testDataWrapperDescription = new TypeDescription(TestDataWrapper.class);
         testDataWrapperDescription.addPropertyParameters("testData", TestData.class);
         constructor.addTypeDescription(testDataWrapperDescription);
+        // File for yaml file reading
 
         Yaml yaml = new Yaml(constructor);
         try (InputStream inputStream = YamlOperations.class.getClassLoader().getResourceAsStream("TestData.yaml")) {
@@ -24,11 +25,11 @@ public class YamlOperations {
             }
         } catch (Exception e) {
             e.printStackTrace();
-        }*/
-    }
+        }
+    }*/
 }
 
-class TestDataWrapper {
+/*lass TestDataWrapper {
     private List<TestData> testData;
 
     public List<TestData> getTestData() {
@@ -59,4 +60,4 @@ class TestData {
     public void setPassword(String password) {
         this.password = password;
     }
-}
+}*/

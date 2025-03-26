@@ -18,7 +18,7 @@ public class CrossBrowserTest {
 
     private WebDriver driver;
 
-    @Parameters("browser")
+    /*@Parameters("browser")
     @BeforeMethod
     public void setUp(String browser) throws MalformedURLException {
         if (browser.equalsIgnoreCase("chrome")) {
@@ -40,7 +40,7 @@ public class CrossBrowserTest {
         if (driver != null) {
             driver.quit();
         }
-    }
+    }*/
 
     @Test(dataProvider = "loginData", dataProviderClass = ExcelDataProvider.class)
     public void swagLabsLoginFunctionality(String userName, String password) {

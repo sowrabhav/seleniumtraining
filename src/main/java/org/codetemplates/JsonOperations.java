@@ -3,13 +3,14 @@ package org.codetemplates;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import java.io.File;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
 public class JsonOperations {
     public static void main(String[] args) {
         try {
-            String content = new String(Files.readAllBytes(Paths.get("TestData.json")));
+            String content = new String(Files.readAllBytes(Paths.get("/Users/baba/Documents/GitHub/2025-Selenium/seleniumtraining/src/main/resources/testdata/TestData.json")));
             JSONObject jsonObject = new JSONObject(content);
             JSONArray testDataArray = jsonObject.getJSONArray("testData");
 

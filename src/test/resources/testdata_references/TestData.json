@@ -12,5 +12,7 @@
       "username": "testUser3",
       "password": "password3"
     }
-  ]
+  ],
+
+  "testData2":["testData1", "testData2", "testData3"]
 }

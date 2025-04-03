@@ -8,11 +8,11 @@
 -- Browser Commands (get, getCurrentUrl, getTitle, getPageSource, close, quit, navigate, manage, etc.) - Done
 -- Pages, IFrames, Multi tab, Popup, Alert, Window, Cookies, Screenshot, etc., - Done
 -- XPath (Absolute, Relative, Contains, Text, AND, OR, NOT, Functions, Operators, etc.) - Done
--- WebTables (Static, Dynamic, Pagination, Sorting, Filtering, etc.)
+-- WebTables (Static, Dynamic, Pagination, Sorting, Filtering, etc.) - Done
 -- Synchronization (Implicit Wait, Explicit Wait, Fluent Wait, Page Load Timeout, Set Script Timeout) "https://testgrid.io/blog/waits-in-selenium/" - Done
 -- Headless Browser Testing
 -- Cross Browser Testing
--- Data Driven Testing (Excel, CSV, XML, Json, Flat file, Database, etc.,)
+-- Data Driven Testing (Excel, CSV, XML, Json, Flat file, Database, etc.,) - Done
 -- Exceptions (NoSuchElementException, ElementNotVisibleException, ElementNotSelectableException, TimeoutException, WebDriverException, etc.)
 -- Reporting (Extent Reports, Allure Reports, TestNG Reports, JUnit Reports, etc.)
 -- Logging (Log4j, Logback, etc.)

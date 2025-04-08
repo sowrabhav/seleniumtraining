@@ -10,12 +10,13 @@
 -- XPath (Absolute, Relative, Contains, Text, AND, OR, NOT, Functions, Operators, etc.) - Done
 -- WebTables (Static, Dynamic, Pagination, Sorting, Filtering, etc.) - Done
 -- Synchronization (Implicit Wait, Explicit Wait, Fluent Wait, Page Load Timeout, Set Script Timeout) "https://testgrid.io/blog/waits-in-selenium/" - Done
--- Headless Browser Testing
--- Cross Browser Testing
+-- Headless Browser Testing - Done
+-- Cross Browser Testing - Done
+-- Selenim Grid (Hub, Node, RemoteWebDriver, DesiredCapabilities, etc.)
 -- Data Driven Testing (Excel, CSV, XML, Json, Flat file, Database, etc.,) - Done
 -- Exceptions (NoSuchElementException, ElementNotVisibleException, ElementNotSelectableException, TimeoutException, WebDriverException, etc.)
--- Reporting (Extent Reports, Allure Reports, TestNG Reports, JUnit Reports, etc.)
--- Logging (Log4j, Logback, etc.)
+-- Reporting (Extent Reports, Allure Reports, TestNG Reports, JUnit Reports, etc.) - Done
+-- Logging (Log4j, Logback, etc.) - Done
 -- TestNG (Annotations, Groups, Priorities, Data Providers, Parameters, Listeners, etc.)
 -- JUnit (Annotations, Assertions, Test Suite, etc.)
 -- Cucumber (Gherkin, Feature File, Step Definition, Runner, Hooks, Tags, etc.)
@@ -40,3 +41,10 @@ Good to have:
 -- Cucumber
 -- POM (Page Object Model)
 -- Karate (API Testing)
+
+
+-- ****************  References   **************
+
+Exceptions - https://www.javatpoint.com/exceptions-in-java
+https://www.geeksforgeeks.org/exceptions-in-java/
+https://www.youtube.com/watch?v=_nmm0nZqIIY

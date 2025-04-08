@@ -60,7 +60,7 @@ Iterate through the list and print each element.
 Scenarios for Swag Labs Application (Execute manually and automate using Selenium WebDriver):
 
 1. Login Functionality
-Valid login with correct username and password.
+Valid login with correct username and password. (Reporting required)
 Invalid login with incorrect username and/or password.
 Login with empty username and/or password fields.
 

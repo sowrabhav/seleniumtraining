@@ -10,7 +10,7 @@
     }
   ],
   "configuration": {
-    "hub": "http://localhost:4444/grid/register",
+    "hub": "http://localhost:5555/grid/register",
     "maxSession": 5,
     "port": 5550
   }

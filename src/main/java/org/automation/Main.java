@@ -9,7 +9,7 @@ import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.remote.CapabilityType;
 
 public class Main {
-    public static void main(String[] args) {
+    public void main1(String[] args) {
         System.out.println("Hello and welcome!");
 
         FirefoxOptions options = new FirefoxOptions()
@@ -35,5 +35,21 @@ public class Main {
 
 //        element.submit();
         driver.quit();
+    }
+
+    public static void main(String[] args) {
+//        System.out.println(System.getProperty("user.dir"));
+
+        // Get the path to the root of the Gradle project
+        String projectPath = System.getProperty("user.dir");
+
+        // Print the project path
+        System.out.println("Project Path: " + projectPath);
+
+        // Example usage: Construct a path to a file in the project
+        String filePath = projectPath + "/src/main/resources/drivers/geckodriver";
+        System.out.println("File Path: " + filePath);
+
+
     }
 }

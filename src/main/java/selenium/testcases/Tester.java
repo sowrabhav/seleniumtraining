@@ -14,12 +14,30 @@ import selenium.reporting.CustomReports;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 public class Tester {
     static Logger logger = (Logger) org.slf4j.LoggerFactory.getLogger(Tester.class);
     static WebDriver driver;
     static SauceLabs_LoginPage sauceLabsLoginPage;
+
+    public Tester(){
+        // read properties files before test run
+        /*Properties properties = new Properties("/Users/baba/Documents/GitHub/2025-Selenium/seleniumtraining/src/main/java/selenium/executionconfiguration/selenium.properties");
+        String browser = properties.getProperty("browser");
+        String url = properties.getProperty("url");
+        String driverPath = properties.getProperty("driverPath");
+        String driverType = properties.getProperty("driverType");
+        String implicitWait = properties.getProperty("implicitWait");*/
+
+
+    }
+
+
+
+
+
 
     public static void main(String[] args) {
         /*logger.info("Starting the Sauce Labs login test");

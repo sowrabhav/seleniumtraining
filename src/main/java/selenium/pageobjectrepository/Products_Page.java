@@ -36,7 +36,6 @@ public class Products_Page {
         }
     }
 
-
     public WebElement getAddToCartBackpackButton() {
         return addToCartBackpackButton;
     }

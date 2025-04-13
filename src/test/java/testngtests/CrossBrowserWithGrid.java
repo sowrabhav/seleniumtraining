@@ -24,7 +24,7 @@ public class CrossBrowserWithGrid {
     public void test1() throws MalformedURLException {
         System.out.println("Test 1");
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setBrowserName("firefox");
+        capabilities.setBrowserName("chrome");
         capabilities.setPlatform(Platform.MAC);
 
         WebDriver driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
@@ -44,6 +44,25 @@ public class CrossBrowserWithGrid {
         System.out.println("Test 2");
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setBrowserName("firefox");
+        capabilities.setPlatform(Platform.MAC);
+
+        WebDriver driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
+        driver.manage().window().maximize();
+
+        driver.get("https://www.google.com");
+        WebElement searchBox = driver.findElement(By.name("q"));
+        searchBox.sendKeys("Selenium Grid");
+        searchBox.submit();
+
+        driver.quit();
+        System.out.println("Test 1");
+    }
+
+    @Test
+    public void test3() throws MalformedURLException {
+        System.out.println("Test 2");
+        DesiredCapabilities capabilities = new DesiredCapabilities();
+        capabilities.setBrowserName("safari");
         capabilities.setPlatform(Platform.MAC);
 
         WebDriver driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);

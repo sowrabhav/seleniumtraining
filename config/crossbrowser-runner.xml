@@ -15,4 +15,11 @@
         </classes>
     </test>
 
+    <test name="Safari Test">
+        <parameter name="browser" value="safari" />
+        <classes>
+            <class name="testngtests.CrossBrowserTest" />
+        </classes>
+    </test>
+
 </suite>

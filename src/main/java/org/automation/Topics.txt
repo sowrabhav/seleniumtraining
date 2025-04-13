@@ -12,15 +12,15 @@
 -- Synchronization (Implicit Wait, Explicit Wait, Fluent Wait, Page Load Timeout, Set Script Timeout) "https://testgrid.io/blog/waits-in-selenium/" - Done
 -- Headless Browser Testing - Done
 -- Cross Browser Testing - Done
--- Selenim Grid (Hub, Node, RemoteWebDriver, DesiredCapabilities, etc.)
+-- Selenim Grid (Hub, Node, RemoteWebDriver, DesiredCapabilities, etc.) - Done
 -- Data Driven Testing (Excel, CSV, XML, Json, Flat file, Database, etc.,) - Done
--- Exceptions (NoSuchElementException, ElementNotVisibleException, ElementNotSelectableException, TimeoutException, WebDriverException, etc.)
+-- Exceptions (NoSuchElementException, ElementNotVisibleException, ElementNotSelectableException, TimeoutException, WebDriverException, etc.) - Done
 -- Reporting (Extent Reports, Allure Reports, TestNG Reports, JUnit Reports, etc.) - Done
 -- Logging (Log4j, Logback, etc.) - Done
 -- TestNG (Annotations, Groups, Priorities, Data Providers, Parameters, Listeners, etc.)
 -- JUnit (Annotations, Assertions, Test Suite, etc.)
 -- Cucumber (Gherkin, Feature File, Step Definition, Runner, Hooks, Tags, etc.)
--- POM (Page Object Model)
+-- POM (Page Object Model) - Done
 -- Karate (API Testing)
 
 Good to have:

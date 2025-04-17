@@ -2,9 +2,7 @@ package selenium.testcases;
 
 import ch.qos.logback.classic.Logger;
 import com.aventstack.extentreports.ExtentTest;
-import io.cucumber.messages.types.Product;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import selenium.drivermanagement.AppDriver;
 import selenium.drivermanagement.Browser;
 import selenium.frameworkutilities.Utils;
@@ -14,8 +12,6 @@ import selenium.reporting.CustomReports;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.Properties;
-import java.util.concurrent.TimeUnit;
 
 public class Tester {
     static Logger logger = (Logger) org.slf4j.LoggerFactory.getLogger(Tester.class);

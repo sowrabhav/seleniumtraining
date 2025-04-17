@@ -17,11 +17,16 @@
 -- Exceptions (NoSuchElementException, ElementNotVisibleException, ElementNotSelectableException, TimeoutException, WebDriverException, etc.) - Done
 -- Reporting (Extent Reports, Allure Reports, TestNG Reports, JUnit Reports, etc.) - Done
 -- Logging (Log4j, Logback, etc.) - Done
--- TestNG (Annotations, Groups, Priorities, Data Providers, Parameters, Listeners, etc.)
--- JUnit (Annotations, Assertions, Test Suite, etc.)
+-- TestNG (Annotations, Groups, Priorities, Data Providers, Parameters, Listeners, Runner etc.) - Done
+-- JUnit (Annotations, Assertions, Test Task from Gradle, etc.) - Done
 -- Cucumber (Gherkin, Feature File, Step Definition, Runner, Hooks, Tags, etc.)
 -- POM (Page Object Model) - Done
 -- Karate (API Testing)
+
+TDD(Test (JUnits) Driven Design - Developers) - JUnit, TestNG - Done
+ATDD (Acceptance Test Driven Design - UAT Testers, Functional Testers) - Cucumber (Given, When, Then - Gherkin)
+BDD (Business Driven Design - Business Analysts, Product Owners, etc.) - Cucumber (Manual testing, Automation Testing (Java, C#, Python, etc.))
+
 
 Good to have:
 -- Firebug (Firefox)
@@ -48,3 +53,8 @@ Good to have:
 Exceptions - https://www.javatpoint.com/exceptions-in-java
 https://www.geeksforgeeks.org/exceptions-in-java/
 https://www.youtube.com/watch?v=_nmm0nZqIIY
+
+TestNG: https://www.youtube.com/playlist?list=PLFGoYjJG_fqp25buwscrsKA5q8qsLsuUy
+JUnit: https://www.youtube.com/playlist?list=PLGRDMO4rOGcNhqxHpVjQP80tLRTxis__x
+Cucumber: https://www.youtube.com/playlist?list=PLFGoYjJG_fqoBFPevCDZDCufDX5h-o3yO
+Karate: https://www.youtube.com/playlist?list=PLFGoYjJG_fqpUgFYoKIMZJAblUbGHSQAb

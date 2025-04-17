@@ -42,4 +42,13 @@ public class ExcelDataProvider {
 
         return data.toArray(new Object[0][]);
     }
+
+    @DataProvider(name="homePageData")
+    public Object[][] getHomePageData() {
+        return new Object[][] {
+                {"homePageTitle", "Home Page"},
+                {"homePageUrl", "https://www.saucedemo.com/inventory.html"},
+                {"homePageHeader", "Products"}
+        };
+    }
 }

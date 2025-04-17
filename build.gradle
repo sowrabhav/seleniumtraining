@@ -14,13 +14,16 @@ dependencies {
     implementation 'org.junit.jupiter:junit-jupiter-api:5.10.0'
     implementation 'org.junit.jupiter:junit-jupiter-engine:5.10.0'
 
+//    testImplementation 'org.mockito:mockito-core:5.5.0'
+//    testImplementation 'org.mockito:mockito-junit-jupiter:5.5.0'
+
     // TestNG
     testImplementation 'org.testng:testng:7.8.0'
 
     // Cucumber
-    implementation 'io.cucumber:cucumber-java:7.20.1'
-    implementation 'io.cucumber:cucumber-core:7.20.1'
-    testImplementation 'io.cucumber:cucumber-junit:7.20.1'
+    implementation 'io.cucumber:cucumber-java:6.11.0'
+    implementation 'io.cucumber:cucumber-core:6.11.0'
+    testImplementation 'io.cucumber:cucumber-junit:6.11.0'
 
     // Selenium
     implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.28.1'
@@ -48,6 +51,8 @@ dependencies {
     // Log4j
 //    implementation 'org.slf4j:slf4j-api:2.0.16'
     implementation 'ch.qos.logback:logback-classic:1.4.11'
+
+//    testImplementation 'com.intuit.karate:karate-junit5:1.4.0'
 }
 
 test {

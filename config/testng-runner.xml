@@ -1,9 +1,31 @@
 
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="TestNG Suite" verbose="1">
-    <test name="TestNG Test">
+
+<suite name="SmokeTest Suite" verbose="1">
+
+<!--    <groups>
+        <run>
+            <exclude name="smoke"/>
+            <include name="regression"/>
+        </run>
+    </groups>-->
+
+    <test name="smoke" parallel="methods" thread-count="1">
+        <parameter name="userName" value="standard_user"></parameter>
+        <parameter name="password" value="secret_sauce"></parameter>
         <classes>
-            <class name="testngtests.saucelabstests"/>
+            <class name="testngtests.SauceLabsLoginTests" />
         </classes>
     </test>
+
+    <!--<test name="regression">
+        <classes>
+            <class name="testngtests.SauceLabsLoginTests"/>
+        </classes>
+    </test>-->
+
 </suite>
+
+
+<!--Java Code (Lines) <&#45;&#45; Method (with @Test annotation) <&#45;&#45; (Class <&#45;&#45; Package) (TestNG Runner)-->
+

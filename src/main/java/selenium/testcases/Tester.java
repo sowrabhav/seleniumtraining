@@ -36,6 +36,8 @@ public class Tester {
 
 
     public static void main(String[] args) {
+        System.out.println(Utils.encryptPassword("secret_sauce"));
+
         /*logger.info("Starting the Sauce Labs login test");
 
         // Webdriver initialization
@@ -61,8 +63,8 @@ public class Tester {
         appDriver.getDriver().quit();
         logger.info("Sauce Labs login test completed");*/
 
-        Tester tester = new Tester();
-        tester.loginTestCase();
+//        Tester tester = new Tester();
+//        tester.loginTestCase();
 
     }
 
@@ -95,4 +97,5 @@ public class Tester {
         appDriver.quitDriver();
 
     }
+
 }

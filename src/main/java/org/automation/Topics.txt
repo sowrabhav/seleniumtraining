@@ -19,7 +19,7 @@
 -- Logging (Log4j, Logback, etc.) - Done
 -- TestNG (Annotations, Groups, Priorities, Data Providers, Parameters, Listeners, Runner etc.) - Done
 -- JUnit (Annotations, Assertions, Test Task from Gradle, etc.) - Done
--- Cucumber (Gherkin, Feature File, Step Definition, Runner, Hooks, Tags, etc.)
+-- Cucumber (Gherkin, Feature File, Step Definition, Runner, Hooks, Tags, etc.) - Done
 -- POM (Page Object Model) - Done
 -- Karate (API Testing)
 
@@ -29,15 +29,14 @@ BDD (Business Driven Design - Business Analysts, Product Owners, etc.) - Cucumbe
 
 
 Good to have:
--- Firebug (Firefox)
--- IE Developer Tools
+-- Developer tools (Firefox)
+-- Edge Developer Tools
 -- Chrome Developer Tools
 -- JavaScript Executor - Done
--- Selenium Grid
+-- Selenium Grid - Done
 -- AutoIT
 -- Sikuli
 -- Robot Class
-
 
 
 -- *****************   Frameworks    **************
@@ -58,3 +57,13 @@ TestNG: https://www.youtube.com/playlist?list=PLFGoYjJG_fqp25buwscrsKA5q8qsLsuUy
 JUnit: https://www.youtube.com/playlist?list=PLGRDMO4rOGcNhqxHpVjQP80tLRTxis__x
 Cucumber: https://www.youtube.com/playlist?list=PLFGoYjJG_fqoBFPevCDZDCufDX5h-o3yO
 Karate: https://www.youtube.com/playlist?list=PLFGoYjJG_fqpUgFYoKIMZJAblUbGHSQAb
+
+Karate setup in local:
+- brew install npm (mac)
+- npm install -g json-server
+- npm install -g npm@11.3.0
+
+(create sample json file at some location)
+run below command
+- json-server jsonfilepath.json --port 8081
+

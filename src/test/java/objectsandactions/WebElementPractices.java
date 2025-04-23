@@ -161,7 +161,7 @@ public class WebElementPractices {
         Actions actions = new Actions(driver);
         actions.sendKeys(body, "Alpha").perform();
 
-//        actions.sendKeys(body, Keys.SHIFT).perform();
+        actions.sendKeys(body, Keys.SHIFT).perform();
         actions.keyDown(body, Keys.CONTROL).perform();
         actions.sendKeys(body, "A").perform();
         actions.keyUp(body, Keys.CONTROL).perform();

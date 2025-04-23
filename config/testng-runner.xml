@@ -2,28 +2,19 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="SmokeTest Suite" verbose="1">
-
-<!--    <groups>
+    <groups>
         <run>
             <exclude name="smoke"/>
             <include name="regression"/>
         </run>
-    </groups>-->
-
+    </groups>
     <test name="smoke" parallel="methods" thread-count="1">
-        <parameter name="userName" value="standard_user"></parameter>
-        <parameter name="password" value="secret_sauce"></parameter>
-        <classes>
-            <class name="testngtests.SauceLabsLoginTests" />
-        </classes>
-    </test>
-
-    <!--<test name="regression">
+        <parameter name="userName" value="standard_user"/>
+        <parameter name="password" value="secret_sauce"/>
         <classes>
             <class name="testngtests.SauceLabsLoginTests"/>
         </classes>
-    </test>-->
-
+    </test>
 </suite>
 
 

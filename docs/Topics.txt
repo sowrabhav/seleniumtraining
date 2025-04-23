@@ -21,7 +21,7 @@
 -- JUnit (Annotations, Assertions, Test Task from Gradle, etc.) - Done
 -- Cucumber (Gherkin, Feature File, Step Definition, Runner, Hooks, Tags, etc.) - Done
 -- POM (Page Object Model) - Done
--- Karate (API Testing)
+-- Karate (API Testing) - Done
 
 TDD(Test (JUnits) Driven Design - Developers) - JUnit, TestNG - Done
 ATDD (Acceptance Test Driven Design - UAT Testers, Functional Testers) - Cucumber (Given, When, Then - Gherkin)
@@ -34,8 +34,8 @@ Good to have:
 -- Chrome Developer Tools
 -- JavaScript Executor - Done
 -- Selenium Grid - Done
--- AutoIT
--- Sikuli
+-- AutoIT - Done
+-- Sikuli - Done (outdated)
 -- Robot Class
 
 

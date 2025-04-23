@@ -10,6 +10,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.*;
 import utils.ExtentReportPractice;
 
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Properties;
 import java.util.logging.Logger;
 
 public class SauceLabsLoginTests {
@@ -19,25 +22,44 @@ public class SauceLabsLoginTests {
     ExtentTest extentTest;
 
     SauceLabsLoginTests extentReportSauceLabsLoginTests;
+    Properties properties;
 
-    @BeforeSuite
-    public void beforeSuite() {
+    @BeforeSuite(alwaysRun = true)
+    public void beforeSuite() throws IOException {
         System.out.println("Before Suite");
+        // read all properties from application.properties file
+        properties = new Properties();
+
+        String filePath = "config/application.properties"; // Replace with your file path
+
+        try (FileInputStream fileInputStream = new FileInputStream(filePath)) {
+            // Load the properties file
+            properties.load(fileInputStream);
+
+            // Access properties
+            String username = properties.getProperty("sauce.standard_username");
+            String password = properties.getProperty("sauce.password");
+
+            System.out.println("Username: " + username);
+            System.out.println("Password: " + password);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
-    @BeforeTest
+    @BeforeTest(alwaysRun = true)
     public void beforeTest() {
         System.out.println("Before Test - (Regression) Validate dependency tests are completed");
         // Validate dependency tests are completed
         // Maintain a flag for each test type (Smoke, Regression, Integration, etc.,)
     }
 
-    @BeforeGroups
+    @BeforeGroups(alwaysRun = true)
     public void beforeGroups() {
         System.out.println("Before Groups");
     }
 
-    @BeforeClass
+    @BeforeClass(alwaysRun = true)
     public void setup() {
         logger = Logger.getLogger(SauceLabsLoginTests.class.getName());
         extentReportSauceLabsLoginTests = new SauceLabsLoginTests();
@@ -45,16 +67,15 @@ public class SauceLabsLoginTests {
         System.out.println("Before class - Setting up the tests");
     }
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void setUp() {
         driver = new ChromeDriver();
         driver.get("https://www.saucedemo.com");
         logger.info("Test started");
     }
 
-//    @Test(priority = 1, groups = {"regression"}, dataProvider = "loginData", dataProviderClass = ExcelDataProvider.class)
+    @Test(priority = 1, groups = {"regression"}, dataProvider = "loginData", dataProviderClass = ExcelDataProvider.class)
     @Parameters({"userName", "password"})
-    @Test(priority=1)
     public void loginSauceLabs(String userName, String password){
         extentTest = extentReports.createTest("swagLabsLoginFunctionality", "Test the login functionality of the Swag Labs application with user : " + userName);
         driver.findElement(By.id("user-name")).sendKeys(userName);
@@ -64,8 +85,8 @@ public class SauceLabsLoginTests {
         extentTest.pass("Login successful for user: " + "StandardUser");
     }
 
-//    @Test(groups = {"smoke"}, dependsOnMethods = {"testngtests.SauceLabsLoginTests.loginSauceLabs"})
-    @Test(priority = 2, groups = {"smoke"})
+    @Test(groups = {"smoke"}, dependsOnMethods = {"testngtests.SauceLabsLoginTests.loginSauceLabs"})
+//    @Test(priority = 2, groups = {"smoke"})
     public void loginSauceLabs_performance_glitch_user(){
         extentTest = extentReports.createTest("swagLabsLoginFunctionality_performance", "Test the login functionality of the Swag Labs application with user : " + "performance_glitch_user");
         driver.findElement(By.id("user-name")).sendKeys("performance_glitch_user");
@@ -75,26 +96,26 @@ public class SauceLabsLoginTests {
         extentTest.pass("Login successful for user: " + "performance_glitch_user");
     }
 
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void tearDown() {
         System.out.println("Tearing down the test case");
         driver.quit();
         logger.info("Test finished");
     }
 
-    @AfterClass
+    @AfterClass(alwaysRun = true)
     public void teardown() {
         System.out.println("Tearing down the class");
         extentReports.flush();
     }
 
 
-    @AfterTest
+    @AfterTest(alwaysRun = true)
     public void afterTest() {
         System.out.println("After Test");
     }
 
-    @AfterSuite
+    @AfterSuite(alwaysRun = true)
     public void afterSuite() {
         System.out.println("After Suite");
     }

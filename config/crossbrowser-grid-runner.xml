@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Cross Browser Suite" parallel="methods" thread-count="3">
+
+    <test thread-count="3" name="Grid Test">
+        <!--<parameter name="browser" value="chrome" />-->
+        <classes>
+            <class name="testngtests.CrossBrowserWithGrid" />
+        </classes>
+    </test>
+
+</suite>

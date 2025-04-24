@@ -1,0 +1,69 @@
+
+-- *****************   Selenium WebDriver    **************
+-- Selenium IDE
+-- WebDriver - Done
+-- WebElements, Locators (By.id, By.name, By.className, By.tagName, By.linkText, By.partialLinkText, By.cssSelector, By.xpath) - Done
+-- WebElements (Button, CheckBox, Radio Button, Drop Down, List Box, Text Box, Text Area, Link, Image, Table, Frame, Alert, Pop Up, File Upload, File Download) - Done
+-- Actions (Mouse Hover, Drag and Drop, Double Click, Right Click, Keyboard Events) - Done
+-- Browser Commands (get, getCurrentUrl, getTitle, getPageSource, close, quit, navigate, manage, etc.) - Done
+-- Pages, IFrames, Multi tab, Popup, Alert, Window, Cookies, Screenshot, etc., - Done
+-- XPath (Absolute, Relative, Contains, Text, AND, OR, NOT, Functions, Operators, etc.) - Done
+-- WebTables (Static, Dynamic, Pagination, Sorting, Filtering, etc.) - Done
+-- Synchronization (Implicit Wait, Explicit Wait, Fluent Wait, Page Load Timeout, Set Script Timeout) "https://testgrid.io/blog/waits-in-selenium/" - Done
+-- Headless Browser Testing - Done
+-- Cross Browser Testing - Done
+-- Selenim Grid (Hub, Node, RemoteWebDriver, DesiredCapabilities, etc.) - Done
+-- Data Driven Testing (Excel, CSV, XML, Json, Flat file, Database, etc.,) - Done
+-- Exceptions (NoSuchElementException, ElementNotVisibleException, ElementNotSelectableException, TimeoutException, WebDriverException, etc.) - Done
+-- Reporting (Extent Reports, Allure Reports, TestNG Reports, JUnit Reports, etc.) - Done
+-- Logging (Log4j, Logback, etc.) - Done
+-- TestNG (Annotations, Groups, Priorities, Data Providers, Parameters, Listeners, Runner etc.) - Done
+-- JUnit (Annotations, Assertions, Test Task from Gradle, etc.) - Done
+-- Cucumber (Gherkin, Feature File, Step Definition, Runner, Hooks, Tags, etc.) - Done
+-- POM (Page Object Model) - Done
+-- Karate (API Testing) - Done
+
+TDD(Test (JUnits) Driven Design - Developers) - JUnit, TestNG - Done
+ATDD (Acceptance Test Driven Design - UAT Testers, Functional Testers) - Cucumber (Given, When, Then - Gherkin)
+BDD (Business Driven Design - Business Analysts, Product Owners, etc.) - Cucumber (Manual testing, Automation Testing (Java, C#, Python, etc.))
+
+
+Good to have:
+-- Developer tools (Firefox)
+-- Edge Developer Tools
+-- Chrome Developer Tools
+-- JavaScript Executor - Done
+-- Selenium Grid - Done
+-- AutoIT - Done
+-- Sikuli - Done (outdated)
+-- Robot Class - Done
+
+
+-- *****************   Frameworks    **************
+-- TestNG
+-- JUnit
+-- Cucumber
+-- POM (Page Object Model)
+-- Karate (API Testing)
+
+
+-- ****************  References   **************
+
+Exceptions - https://www.javatpoint.com/exceptions-in-java
+https://www.geeksforgeeks.org/exceptions-in-java/
+https://www.youtube.com/watch?v=_nmm0nZqIIY
+
+TestNG: https://www.youtube.com/playlist?list=PLFGoYjJG_fqp25buwscrsKA5q8qsLsuUy
+JUnit: https://www.youtube.com/playlist?list=PLGRDMO4rOGcNhqxHpVjQP80tLRTxis__x
+Cucumber: https://www.youtube.com/playlist?list=PLFGoYjJG_fqoBFPevCDZDCufDX5h-o3yO
+Karate: https://www.youtube.com/playlist?list=PLFGoYjJG_fqpUgFYoKIMZJAblUbGHSQAb
+
+Karate setup in local:
+- brew install npm (mac)
+- npm install -g json-server
+- npm install -g npm@11.3.0
+
+(create sample json file at some location)
+run below command
+- json-server jsonfilepath.json --port 8081
+

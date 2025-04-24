@@ -1,0 +1,19 @@
+
+// Driver (Parent driver, New Window driver, Alerts, Frames, etc.)
+// Locating Element (This should not be hardcoded) (Get from repository) (e.g. SauceDemoLoginPage repository for login page objects)
+// Action on element (generic way of doing it)
+// Data (should not hardcode)
+// Assertions/Reporting (This should be in the framework)
+// Driver Quit (This should be in the framework)
+// folder structure
+
+
+1. Folder structure
+    a. drivermanagement
+    b. pageobjectrepository
+    c. testdata
+    d. reporting
+    e. executionconfiguration
+    f. testcases
+    g. frameworkutilities
+

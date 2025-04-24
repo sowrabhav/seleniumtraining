@@ -10,8 +10,53 @@ repositories {
 }
 
 dependencies {
-    testImplementation platform('org.junit:junit-bom:5.10.0')
-    testImplementation 'org.junit.jupiter:junit-jupiter'
+    // JUnit 5
+    implementation 'org.junit.jupiter:junit-jupiter-api:5.10.0'
+    implementation 'org.junit.jupiter:junit-jupiter-engine:5.10.0'
+
+//    testImplementation 'org.mockito:mockito-core:5.5.0'
+//    testImplementation 'org.mockito:mockito-junit-jupiter:5.5.0'
+
+    // TestNG
+    implementation 'org.testng:testng:7.8.0'
+
+    // Cucumber
+    implementation 'io.cucumber:cucumber-java:6.11.0'
+    implementation 'io.cucumber:cucumber-core:6.11.0'
+    testImplementation 'io.cucumber:cucumber-junit:6.11.0'
+
+    // Selenium
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.28.1'
+    implementation 'org.seleniumhq.selenium:selenium-server:3.14.0'
+    implementation 'org.seleniumhq.selenium:selenium-firefox-driver:4.28.0'
+
+    // mysql connector
+    implementation 'com.mysql:mysql-connector-j:8.1.0'
+
+    // Excel reader
+    implementation 'org.apache.poi:poi:5.2.3'
+
+    //Json
+    implementation 'org.json:json:20210307'
+
+    implementation 'com.google.code.gson:gson:2.10.1'
+
+    //Yaml
+    implementation 'org.yaml:snakeyaml:2.0'
+
+    // Extent reports
+//    implementation 'com.relevantcodes:extentreports:2.41.2'
+    implementation 'com.aventstack:extentreports:5.1.1'
+
+    // Log4j
+//    implementation 'org.slf4j:slf4j-api:2.0.16'
+    implementation 'ch.qos.logback:logback-classic:1.4.11'
+
+    implementation 'com.intuit.karate:karate-junit5:1.4.0'
+//    implementation 'io.karatelabs:karate-junit5:1.5.0'
+
+//    implementation 'com.intuit.karate:karate-core:1.4.0'
+
 }
 
 test {
